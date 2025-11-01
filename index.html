@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel Auxílio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Login -->
+<div id="login" class="login">
+    <h2>Login</h2>
+    <input type="text" id="keyInput" placeholder="Digite sua key" class="key-input">
+    <button id="loginBtn" class="login-btn">Login</button>
+    <p id="loginMsg"></p>
+</div>
+
+<!-- Painel -->
+<div id="painel" class="painel" style="display:none;">
+    <h1 class="titulo">Vicente Auxílio</h1>
+
+    <!-- Toggles -->
+<div class="toggle-row">
+    <span>Aumentar Precisão</span>
+    <label class="switch">
+      <input type="checkbox" id="toggle-precision">
+      <span class="slider-toggle"></span>
+    </label>
+</div>
+
+<div class="toggle-row">
+    <span>NoRecoil</span>
+    <label class="switch">
+      <input type="checkbox" id="toggle-recoil">
+      <span class="slider-toggle"></span>
+    </label>
+</div>
+
+<!-- Percentual abaixo do NoRecoil -->
+<p id="percent" class="percent">50%</p>
+
+<!-- Barra de progresso -->
+<div class="barra-container">
+    <div class="barra" id="barra"></div>
+    <input type="range" id="slider" min="0" max="100" value="50">
+</div>
+
+    <!-- Botão Injetar -->
+    <button id="injetar">Injetar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
